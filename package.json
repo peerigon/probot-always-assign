@@ -1,9 +1,9 @@
 {
   "name": "probot-always-assign",
   "version": "1.1.0",
-  "description": "",
+  "description": "A probot app that keeps issue assigned",
   "author": "Michael Jaser <michael.jaser@peerigon.com>",
-  "license": "ISC",
+  "license": "MIT",
   "repository": "https://github.com/peerigon/probot-always-assign.git",
   "scripts": {
     "dev": "nodemon --exec \"npm start\"",
