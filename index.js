@@ -12,11 +12,11 @@ module.exports = (robot) => {
   robot.on(
     ["issues.opened", "issues.edited", "issues.unassigned"],
     async (context) => {
-      const config = await context.config("config.yml", {
-        addAssignees: true,
+      const config = await context.config("always-assign.yml", {
+        enabled: true,
       });
 
-      if (!config.addAssignees) {
+      if (!config.enabled) {
         return;
       }
 
